@@ -4,6 +4,9 @@
 
 # require 'link'
 
+require 'spec_helper'
+
+
 feature "On my homepage" do
   scenario "I can see list of the links" do
     Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')

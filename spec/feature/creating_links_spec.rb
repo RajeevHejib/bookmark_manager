@@ -22,4 +22,5 @@ feature "can save a website" do
     click_button 'Submit'
     expect(page).to have_content('search engines')
   end
+
 end

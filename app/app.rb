@@ -14,7 +14,6 @@ class BookmarkManager < Sinatra::Base
 
   get '/links' do
     @links = Link.all
-    # @tags = Tag.all
     erb(:'links/index')
   end
 
@@ -28,6 +27,12 @@ class BookmarkManager < Sinatra::Base
     LinkTag.create(:link => link, :tag => tag)
     redirect('/links')
   end
+
+  get '/tags/bubbles' do
+    @tags = Tag.all
+    erb(:'tags/bubbles')
+  end
+
 
   run! if app_file == $0
 

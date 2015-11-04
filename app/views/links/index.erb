@@ -17,6 +17,9 @@
   <input type='submit' value='Add Link'>
 </form>
 
-<form action='/tags/bubbles'>
-  <input type='submit' value='Filter by Tags'>
+<form action='/tags' method='post'>
+  <label for='filter_name'>
+  Tag Filter: <input type='text' name='filter_name'>
+  </label>
+  <input type='submit' value='Submit'>
 </form>

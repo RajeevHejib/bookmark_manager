@@ -33,17 +33,6 @@ class BookmarkManager < Sinatra::Base
 
     @tag = Tag.all(name: params[:filter_name])
     erb(:'tags')
-
-    #
-    #
-    #
-    #
-    #
-    # p @tag.links
-    # @links = Link.all
-    # p @links
-    # @links = @tag ? @tag.links : []
-    #
   end
 
 
